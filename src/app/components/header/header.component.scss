@@ -1,0 +1,23 @@
+header {
+  padding: 0 60px;
+
+
+
+  .navbar, .navbar-brand {
+    padding: 0;
+  }
+
+  img {
+    height: 88px;
+
+    @media (max-width: 600px) {
+      height: 32px;
+    }
+  }
+}
+
+
+.active {
+  color: #1C49AD;
+  border-bottom: 2px solid #1C49AD;
+}

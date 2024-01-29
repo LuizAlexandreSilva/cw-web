@@ -1,1 +1,67 @@
-<p>header works!</p>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+      <a href="/">
+        <img src="/assets/cw_logo.png" alt="Connect Works">
+      </a>
+      <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">&#9776;</button>
+    </div>
+
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <div class="navbar-nav w-100 d-flex justify-content-between">
+          <div class="d-md-flex mx-md-auto">
+            <a href="/quem-somos" class="nav-item nav-link mx-3">
+              Quem somos
+            </a>
+            <a href="/o-que-fazemos" class="nav-item nav-link mx-3">
+              O que fazemos
+            </a>
+            <a href="/cases" class="nav-item nav-link mx-3">
+              Cases
+            </a>
+            <a href="/treinamentos" class="nav-item nav-link mx-3">
+              Treinamentos
+            </a>
+            <a href="/contato" class="nav-item nav-link mx-3">
+              Contato
+            </a>
+          </div>
+          <button class="btn btn-outline-primary ms-5">
+            Comece um projeto
+            <i class="bi bi-arrow-right"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+            </svg>
+          </button>
+
+      </div>
+<!--        <ul class="navbar-nav my-auto">-->
+<!--          <li class="nav-item">-->
+<!--            -->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a href="/o-que-fazemos" class="nav-link">-->
+<!--              O que fazemos-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a href="/cases" class="nav-link">-->
+<!--              Cases-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a href="/treinamentos" class="nav-link">-->
+<!--              Treinamentos-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a href="/contato" class="nav-link">-->
+<!--              Contato-->
+<!--            </a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--        <button class="btn btn-outline-primary">das</button>-->
+<!--      </div>-->
+    </div>
+  </nav>
+</header>
